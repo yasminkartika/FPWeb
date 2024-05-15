@@ -1,0 +1,51 @@
+/*** Section Title ***/
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: #053B74;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: #053B74;
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+  display: none;
+}
+
+ .colorgold {
+  color: #AE8D4A;
+}
+
+.colorblue {
+  color: #053B74;
+} 
+
+/*** Button ***/
+.btn-secondary {
+  background-color: #053B74;
+  color: #FFFFFF;
+}
+
+
+
+
+

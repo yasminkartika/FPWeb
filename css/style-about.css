@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
+
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    /* position: relative; */
+    /* z-index: auto;  */
+
+    /* height: 4656px; */
+  }
+
+
+
+.container1{
+  width: 100%;
+  height: 400px;
+  background-color: #DEEBFE;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.ABOUTUS {
+  font-size: 70px;
+  font-weight: bolder;
+  color: white;
+}
+
+
+.content-about{
+  display: flex;
+  height: 650px; 
+  width: 600px;
+  
+  align-items: center ;
+  justify-content: center;
+}
+
+.bingkai{
+  width: 13.5rem;
+  height: 22rem;
+  border: 4px solid #AE8D4A;  
+}
+
+.kotak1{
+  height: 215px; 
+  width: 215px;
+  background-color: #161412;
+  position: absolute;
+  margin-top: 300px;
+  margin-right: 140px;
+  background-image: url('gambar/gambar2.png');
+}
+
+.kotak2{
+  height: 215px; 
+  width: 215px;
+  background-color: #9a6a3a;
+  position: absolute;
+  margin-bottom: 250px;
+  margin-right: 100px;
+  background-image: url('gambar/gambar1.png');
+}
+
+.kotak3{
+  height: 215px; 
+  width: 215px;
+  background-color: #ee861e;
+  position: absolute;
+  margin-left: 200px;
+  border: 3px solid white;
+  background-image: url('gambar/gamabar3.png');   
+}
+
+/*** Section Title ***/
+.section-title {
+  padding-top: 75px;
+  position: relative;
+  display: inline-block;
+  color: #9a6a3a;
+}
+
+.section-title::after {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 2.3px;
+  top: 94%;
+  right: -83px;
+  background: #9a6a3a;
+}
+
+.name6{
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.name6 span11{
+  font-weight: 400;
+  color: rgb(182, 188, 185);
+  text-shadow: 2px 2px 4px rgb(12, 141, 211);
+}
+
+.name6 span{
+    font-weight: 400;
+}
+
+
+
+
+
+
+.section-title-advantage {
+  position: relative;
+  display: inline-block;
+  color:#d89048;
+}
+
+.section-title-advantage::before {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  left: -55px;
+  margin-top: -1px;
+  background: #d1a374;
+}
+
+.section-title-advantage::after {
+  position: absolute;
+  content: "";
+  width: 45px;
+  height: 2px;
+  top: 50%;
+  right: -55px;
+  margin-top: -1px;
+  background: #d1a374;
+}
+
+.section-title-advantage.text-start::before,
+.section-title-advantage.text-end::after {
+  display: none;
+}
+
+.container2{
+  background-image: url('gambar/background-advantage1.png');
+  background-size: cover;
+}
+
+.judul{
+  margin-top: 20px;
+  margin-bottom: 45px;
+  color: whitesmoke; 
+  font-size: 20px;
+  font-weight: 700;
+
+}
+
+.content {
+  text-align: justify; 
+  font-size: 12px; 
+  color: whitesmoke;
+  margin-left: 20px;
+  margin-right: 20px;
+}

@@ -1,0 +1,468 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700");
+body {
+    font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HERO SECTION */
+
+.booking-form {
+    width: 350px;
+    margin-left: 10px;
+    background: #ffffff;
+    padding: 44px 40px 50px 40px;
+    margin-top: 5rem;
+    border-radius: 6px;
+}
+
+.hero-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 100px;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 5;
+}
+
+.hero-text {
+    padding-top: 145px;
+}
+
+.hero-text h1 {
+    font-size: 80px;
+    line-height: 90px;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+
+.hero-slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.hero-slider.owl-carousel .owl-dots {
+    position: absolute;
+    left: 0;
+    bottom: 23px;
+    width: 100%;
+    text-align: center;
+}
+
+.hero-slider.owl-carousel .owl-dots button {
+    height: 6px;
+    width: 6px;
+    background: #ffffff;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin-right: 10px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.hero-slider.owl-carousel .owl-dots button.active {
+    width: 30px;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.hero-slider.owl-carousel .owl-dots button:last-child {
+    margin-right: 0;
+}
+
+.hero-slider .owl-stage-outer,
+.hero-slider .owl-stage,
+.hero-slider .owl-item,
+.hero-slider .hs-item {
+    height: 100%;
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    left: -55px;
+    margin-top: -1px;
+    background: #255695;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top: 50%;
+    right: -55px;
+    margin-top: -1px;
+    background: #255695;
+}
+
+.section-title.text-start::before,
+.section-title.text-end::after {
+    display: none;
+}
+
+.judul {
+    font-size: 36px;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    top: 200px;
+    left: 100px;
+    margin-left: 10px;
+}
+
+#judul2 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #4384B9;
+    margin-top: 0;
+}
+
+.reservation-form {
+    /* display: flex;
+    align-items: center; */
+    justify-content: flex-end;
+    /* padding: 20px;  */
+    background-image: url('../images/salky/homepage.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    /*background-position: center;
+    color: black;
+    position: relative; */
+}
+
+.reservation-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Opasitas 0.5 untuk lapisan hitam */
+}
+
+
+/* Aturan gaya lainnya tetap tidak berubah */
+
+.kotak {
+    position: absolute;
+    background-color: white;
+    width: 370px;
+    height: 80%;
+    left: 200;
+    padding-bottom: 10px;
+}
+
+.form-container {
+    width: 300px;
+    margin-right: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #ECEAC3;
+    border: none;
+    cursor: pointer;
+    color: black;
+}
+
+button:hover {
+    background-color: #555;
+    transition: 0.5s;
+}
+
+.benefit {
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 670px;
+    position: relative;
+    /* Tambahkan posisi relatif untuk container benefit */
+}
+
+.benefit-title {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #255695;
+}
+
+.benefit-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    width: 320px;
+    height: 285px;
+    position: relative;
+    /* Tambahkan posisi relatif untuk item benefit */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.benefit-box {
+    background-color: white;
+    padding: 20px;
+    width: 245px;
+    height: 245px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 3px solid black;
+    position: absolute;
+    /* Tambahkan posisi absolut */
+    top: 80%;
+    /* Geser ke atas 10% dari posisi item benefit */
+    left: 50%;
+    /* Geser ke tengah */
+    transform: translateX(-50%);
+    /* Geser kembali 50% ke kiri */
+}
+
+.benefit-box p {
+    font-size: 14px;
+}
+
+.benefit-box h3 {
+    font-size: 20px;
+}
+
+.learn-more {
+    margin-top: 10px;
+    /* Beri jarak antara deskripsi dan tombol */
+    background-color: #ECEAC3;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    background-color: #555;
+    transition: 0.5s;
+}
+
+.meeting-room {
+    text-align: center;
+    padding: 10px;
+    color: black;
+    width: 100%;
+}
+
+.meeting-room h1 {
+    color: #255695;
+}
+
+.meeting-room p {
+    font-weight: bold;
+}
+
+.learn-more-meeting-room {
+    bottom: 0;
+    margin-top: 50px;
+    background-color: #4384B9;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    /* Nilai offset, blur radius, dan warna */
+    width: 60%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.meeting-room-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.meeting-room-item {
+    width: 100%;
+    height: 350px;
+    /* Atur tinggi item */
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.meeting-room-item img {
+    width: 100%;
+    height: 100%;
+    /* Atur tinggi gambar secara penuh */
+    object-fit: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.room-name {
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    border: 6px solid #ECEAC3;
+    color: black;
+    padding: 8px;
+    margin: 0;
+    text-align: center;
+}
+
+.ballroom {
+    display: flex;
+    flex-direction: column;
+    /* Mengubah orientasi flex menjadi kolom */
+    align-items: center;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    /* Mengatur agar konten berada di tengah */
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.ballroom-title {
+    margin-bottom: 20px;
+    margin-top: 100px;
+    font-size: 40px;
+    color: #255695;
+    top: 0;
+    /* Menetapkan posisi judul di bagian atas saat di-scroll */
+    background-color: #fff;
+    /* Menambahkan latar belakang agar judul terlihat jelas saat di-scroll */
+    z-index: 1;
+    /* Menentukan tingkat z-index agar judul tampil di atas konten lainnya */
+}
+
+.ballroom-item {
+    width: calc(80% - 20px);
+    /* Lebar item ballroom, kurangi lebar margin */
+    margin: 10px;
+    /* Atur margin untuk membuat grid rapat */
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+}
+
+.grid-item {
+    text-align: center;
+}
+
+.ballroom-item img {
+    width: 100%;
+    /* Atur lebar gambar agar sesuai dengan lebar item */
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* Tambahkan efek box shadow */
+}
+
+.description {
+    background-color: white;
+    border: 3px solid black;
+    color: black;
+    padding: 20px;
+}
+
+.description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: black;
+    background-color: #ECEAC3;
+}
+
+.description p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+.voucher-button {
+    background-color: #AE8D4A;
+    /* Warna kuning untuk tombol voucher */
+    color: white;
+    font-size: 24px;
+    /* Ukuran font cukup besar */
+    padding: 15px 30px;
+    /* Padding tombol */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.book-now-button {
+    background-color: #4384B9;
+    /* Warna biru untuk tombol book now */
+    color: white;
+    font-size: 24px;
+    /* Ukuran font cukup besar */
+    padding: 15px 30px;
+    /* Padding tombol */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 80%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
