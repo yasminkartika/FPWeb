@@ -16,7 +16,7 @@ body {
 .container1 {
     width: 100%;
     height: 400px;
-    background-color: #DEEBFE;
+    background-color: #6c757d;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@ body {
 .ABOUTUS {
     font-size: 70px;
     font-weight: bolder;
-    color: #053B74;
+    color: #ffffff;
 }
 
 .content-about {
@@ -101,7 +101,8 @@ body {
 .section-title-advantage {
     position: relative;
     display: inline-block;
-    color: #d89048;
+    color: #d1a374;
+    font-size: 30px;
 }
 
 .section-title-advantage::before {
