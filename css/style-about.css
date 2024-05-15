@@ -31,7 +31,7 @@ body {
 .ABOUTUS {
   font-size: 70px;
   font-weight: bolder;
-  color: white;
+  color: #053B74;
 }
 
 
@@ -102,21 +102,6 @@ body {
   font-size: 50px;
   font-weight: 700;
 }
-
-.name6 span11{
-  font-weight: 400;
-  color: rgb(182, 188, 185);
-  text-shadow: 2px 2px 4px rgb(12, 141, 211);
-}
-
-.name6 span{
-    font-weight: 400;
-}
-
-
-
-
-
 
 .section-title-advantage {
   position: relative;
