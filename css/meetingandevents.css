@@ -251,7 +251,7 @@ button:hover {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 3px solid black;
+    border: 1.5px solid black;
     position: absolute;
     /* Tambahkan posisi absolut */
     top: 80%;
@@ -414,7 +414,7 @@ button:hover {
 
 .description {
     background-color: white;
-    border: 3px solid black;
+    border: 1.5px solid black;
     color: black;
     padding: 20px;
 }
@@ -430,8 +430,6 @@ button:hover {
     font-size: 16px;
     line-height: 1.5;
 }
-
-
 
 .voucher-button {
     background-color: #AE8D4A;
