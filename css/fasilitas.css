@@ -1,92 +1,96 @@
 .fasilitas {
-    font-family: roboto, sans-serif;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
 }
 
 .hero {
-    background-image: url(2.jpg);
-    background-size: contain;
-    background-position: center;
-    color: #fff;
-    text-align: center;
-    padding: 50px 0;
+  background-image: url(2.jpg);
+  background-size: contain;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
 }
 
 .about {
-    padding: 50px 0;
-    background-color: #f4f4f4;
-    text-align: center;
+  padding: 50px 0;
+  background-color: #f4f4f4;
+  text-align: center;
 }
 
 .fasilitas-s {
-    justify-content: space-between;
-    margin: 20px auto;
+  justify-content: space-between;
+  margin: 20px auto;
 }
 
 .hr {
-    border-top: 4px solid rgb(146, 112, 4);
-    width: 200px;
-    margin: 0 auto;
+  border-top: 4px solid rgb(146, 112, 4);
+  width: 200px;
+  margin: 0 auto;
 }
-
 
 /*---------------------
   About US
 -----------------------*/
 
 .about-text {
-    text-align: center;
-    padding: 0 35px;
+  text-align: center;
+  padding: 0 35px;
 }
 
 .about-text p {
-    color: #595960;
-    font-weight: 500;
-    font-size: 16px;
-    font-family: "Cabin", sans-serif;
+  color: #595960;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: "Cabin", sans-serif;
 }
 
 .about-text p.f-para {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .about-text p.s-para {
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 .about-text .about-btn {
-    color: #19191a;
+  color: #19191a;
 }
 
 .about-pic img {
-    min-width: 100%;
+  min-width: 100%;
 }
 
 .section-title {
-    text-align: center;
-    margin-bottom: 22px;
+  text-align: center;
+  margin-bottom: 22px;
 }
 
 .section-title span {
-    font-size: 14px;
-    color: #dfa974;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-size: 14px;
+  color: rgb(146, 112, 4);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 .section-title h2 {
-    font-size: 44px;
-    color: #19191a;
-    line-height: 58px;
-    margin-top: 10px;
-    font-family: "Lora", serif;
-    font-size: 36px;
+  font-size: 44px;
+  color: #19191a;
+  line-height: 58px;
+  margin-top: 10px;
+  font-family: "Lora", serif;
+  font-size: 36px;
 }
 
 .spad {
-    padding-top: 100px;
-    padding-bottom: 100px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about-text span {
+  font-size: 23px;
+  text-align: center;
 }
