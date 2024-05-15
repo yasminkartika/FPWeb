@@ -6023,7 +6023,6 @@ button.close {
     left: 0;
     z-index: 1040;
     background-color: none;
-    overflow: scroll;
 }
 
 .modal-backdrop.fade {
