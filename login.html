@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>GRAND OASIS</title>
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <link
       rel="stylesheet"
@@ -31,42 +28,18 @@
     <link rel="icon" href="images/LG.png" />
   </head>
 
-  <body
-    class="body"
-    data-spy="scroll"
-    data-target="#templateux-navbar"
-    data-offset="200"
-  >
-    <nav
-      class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light"
-      id="templateux-navbar"
-    >
+  <body class="body" data-spy="scroll" data-target="#templateux-navbar" data-offset="200">
+    <nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light" id="templateux-navbar">
       <div class="container">
         <img
           src="images/LG2.png"
           style="padding: 5px; width: 70px; height: auto; margin-bottom: 15px"
         />
         &emsp;
-        <a
-          class="navbar-brand mb-3"
-          href="index.html"
-          style="
-            font-weight: bold;
-            font-family: Poppins, sans-serif;
-            color: #c49102;
-          "
-        >
+        <a class="navbar-brand mb-3" href="index.html" style="font-weight: bold; font-family: Poppins, sans-serif; color: #c49102;">
           <span style="color: #003a70">GRAND</span> OASIS
         </a>
-        <div
-          class="site-menu-toggle js-site-menu-toggle ml-auto"
-          data-aos="fade"
-          data-toggle="collapse"
-          data-target="#templateux-navbar-nav"
-          aria-controls="templateux-navbar-nav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <div class="site-menu-toggle js-site-menu-toggle ml-auto" data-aos="fade" data-toggle="collapse" data-target="#templateux-navbar-nav" aria-controls="templateux-navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
           <span></span>
           <span></span>
           <span></span>
@@ -75,109 +48,82 @@
         <div class="collapse navbar-collapse" id="templateux-navbar-nav">
           <ul class="navbar-nav ml-auto" style="font-size: 15px">
             <li class="nav-item">
-              <a class="nav-link active" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="dropdown nav-item">
-              <a
-                class="nav-link dropdown-toggle"
-                id="dropdownMenu2"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-                >Service</a
-              >
+              <a class="nav-link dropdown-toggle" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Service</a>
               <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
                 <a class="dropdown-item" href="rooms.html">Rooms</a>
                 <a class="dropdown-item" href="fasilitas.html">Fasilitas</a>
-                <a class="dropdown-item" href="meeting.html"
-                  >Meeting & Events</a
-                >
+                <a class="dropdown-item" href="meeting.html">Meeting & Events</a>
               </div>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="offers.html">Offers</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link ion-ios-help-outline"
-                href="#section-events"
-                style="position: relative; font-size: 25px; top: -9px"
-              ></a>
+              <a class="nav-link ion-ios-help-outline" href="#section-events" style="position: relative; font-size: 25px; top: -9px"></a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link ion-ios-telephone-outline"
-                href="contact.html"
-                style="position: relative; font-size: 25px; top: -9px"
-              ></a>
+              <a class="nav-link ion-ios-telephone-outline" href="contact.html" style="position: relative; font-size: 25px; top: -9px"></a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link ion-android-person"
-                href="login.html"
-                style="position: relative; font-size: 25px; top: -9px"
-              ></a>
+              <a class="nav-link ion-android-person active" href="login.html" style="position: relative; font-size: 25px; top: -9px"></a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
     <!-- END nav -->
-
-    <div class="login">
-      <div class="card tengah">
-        <div class="card-body">
-          <div>
-            <p><font face="verdana" size="4" color="black"></font></p>
-            <div class="text-center">
-              <button type="button" class="btn btn-primary mb-3">
-                <h6><strong>LOGIN</strong></h6>
-              </button>
-              <a
-                href="register.html"
-                type="button"
-                class="btn btn-secondary mb-3"
-                >REGISTER</a
-              >
+   
+    <!-- Login Form -->
+    <div class="container">
+      <div class="row justify-content-center  " data-aos="fade-up">
+        <div class="col-md-4">
+          <div class="login-form shadow rounded wow fadeInUp" data-wow-delay="0.1s">
+            <h2>Login</h2>
+            <form>
+              <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" class="form-control" placeholder="Enter username">
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter password">
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+              <div class="text-right forgot-password">
+                <a href="#">
+                  Forgot password?
+                </a>
+              </div>
+              <div class="text-center">
+                <span>
+                  Or Sign Up Using
+                </span>
+              </div>
+              <div class="d-flex justify-content-center">
+                <a href="#" class="btn btn-primary m-2">
+                    <i class="fa fa-facebook-f"></i>
+                </a>
+        
+                <a href="#" class="btn btn-info m-2">
+                    <i class="fa fa-twitter"></i>
+                </a>
+        
+                <a href="#" class="btn btn-danger m-2">
+                    <i class="fa fa-google"></i>
+                </a>
             </div>
-            <div class="mb-3">
-              <label for="Email" class="form-label">E-mail</label>
-              <input
-                type="text"
-                class="form-control"
-                id="Email"
-                placeholder=""
-              />
-            </div>
-            <div class="mb-3">
-              <label for="Password" class="form-label">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="Password"
-                placeholder=""
-              />
-              <br />
-              <p>
-                Password must be at least 8 characters, have upper and lower
-                case, and contain a number.
-              </p>
-              <br />
-              <p><a href="#" class="link-primary">Forgot Password?</a></p>
-            </div>
-            <div class="d-grid gap-2 col-6 mx-auto">
-              <a href="profile.html" class="btn btn-primary" type="button"
-                >LOGIN</a
-              >
-            </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-
+    
     <!-- Footer Start-->
     <footer>
       <div class="footer-area black-bg footer-padding">
@@ -186,15 +132,9 @@
             <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6">
               <div class="single-footer-caption mb-30">
                 <div class="footer-pera">
-                  <span
-                    style="
-                      color: white;
-                      font-weight: bold;
-                      font-family: Poppins, sans-serif;
-                      font-size: 27px;
-                    "
-                    >GRAND OASIS</span
-                  >
+                  <span style="color: white; font-weight: bold; font-family: Poppins, sans-serif; font-size: 27px;">
+                    GRAND OASIS
+                  </span>
                 </div>
                 <div class="footer-social footer-social2">
                   <a href="#"><i class="fa fa-facebook"></i></a>
@@ -234,12 +174,7 @@
                 <div class="footer-tittle">
                   <h4>Our Location</h4>
                   <ul>
-                    <li>
-                      <a href="#"
-                        >Jl. Palagan Tentara Pelajar, Panggung Sari,
-                        Sariharjo,</a
-                      >
-                    </li>
+                    <li><a href="#">Jl. Palagan Tentara Pelajar, Panggung Sari, Sariharjo,</a></li>
                     <li><a href="#">Kec. Ngaglik, Kabupaten Sleman, DIY</a></li>
                   </ul>
                   <div class="footer-form">
@@ -281,5 +216,30 @@
       </div>
     </footer>
     <!-- Footer End-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+
+
+
+    <script src="js/aos.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+    <script src="js/active.js"></script>
+
+    <!-- <script src="js2/owl.carousel.js"></script> -->
+    <script src="js/custom.js"></script>
   </body>
 </html>
