@@ -1,0 +1,22 @@
+.body {
+  background-color: #fdf4f5;
+  font-family: "Raleway", sans-serif;
+}
+
+.login {
+  background: url(img/bglogin.png);
+  width: 100%; /* Adjusted width to make the login section visible */
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tengah {
+  width: 560px;
+  height: 492px;
+  padding: 50px 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
