@@ -1,0 +1,66 @@
+
+.navbar-nav .nav-link {
+  color: #000000 !important; /* Warna putih untuk teks navbar */
+}
+
+
+
+.login-form {
+  background-color: rgba(255, 255, 255, 0.8); /* Menggunakan alpha channel untuk transparansi */
+  padding: 20px;
+  margin-top: 10rem;
+  border: 1px solid #ccc;
+  
+  margin-bottom: 10rem;
+}
+
+
+.login-form h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],.login-form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.login-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  height: 40px;
+  background-color: #053B74;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #d3d3d3;
+}
+
+.forgot-password {
+  color: #337ab7;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.forgot-password:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
