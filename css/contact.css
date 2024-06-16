@@ -1,20 +1,96 @@
-*{
-   
+
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.contact h6 {
+    background-color: #dff0ff;
+    color: #4384B9;
+    padding:6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 15px;
+    font-family: Cabin, sans-serif;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+.form-control {
+    background-color: #f0f8ff; /* Warna latar belakang */
+    color: #333; /* Warna teks */
+}
+.form-control:focus {
+    background-color: #e6f7ff; /* Warna latar belakang saat fokus */
+    border-color: #4384B9; /* Warna border saat fokus */
+}
+.form-group {
+    margin-bottom: 15px; /* Margin bawah untuk setiap form-group */
+}
+
+.call {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.call svg {
+    width: 5rem; /* Ukuran SVG */
+    height: 5rem;
+    fill: none;
+    stroke: #003A70; /* Warna garis */
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 1.5;
+}
+
+.call h6 {
+    font-size: 40px; /* Ukuran nomor telepon */
+    margin: 0;
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.call h5 {
+    margin-top: -10px;
+    padding-left: 1rem;
+    font-size: 25px; /* Ukuran email */
+    text-align: left;
+    font-weight: light;
+    transition: background-color 0.3s;
+    
+}
+.call h5:hover {
+    color: #003A70; /* Warna teks saat hover */
+}
+
+
 
 .komen-button {
     background-color: #4384B9;
-    /* Warna biru untuk tombol book now */
-    color: white;
+    /*Warnabiruuntuktombolbooknow*/color: white;
     font-size: 24px;
-    /* Ukuran font cukup besar */
-    padding: 15px 30px;
-    /* Padding tombol */
-    border: none;
+    /*Ukuranfontcukupbesar*/padding: 15px 30px;
+    /*Paddingtombol*/border: none;
     cursor: pointer;
     transition: background-color 0.3s;
     width: 80%;
     padding: 10px;
-    border: none;
     cursor: pointer;
+    -webkit-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s;
+    -ms-transition: background-color 0.3s;
+    -o-transition: background-color 0.3s;
+}
+.komen-button:hover {
+    background-color: rgb(0, 58, 112) ;/* Warna biru saat di-hover */
+    color: #fff; /* Warna teks saat di-hover */
+    border: none;
+}
+
+
+.hover-text:hover {
+    color: rgb(3, 76, 144); /* Warna teks saat di-hover */
+
 }
