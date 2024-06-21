@@ -1,0 +1,74 @@
+.navbar-nav .nav-link {
+  color: #000000 !important; /* Warna putih untuk teks navbar */
+}
+.hotel-booking {
+  padding: 20px;
+}
+
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step::before,
+.step::after {
+  content: "";
+  position: absolute;
+  top: 15px; /* Sesuaikan nilai ini agar sejajar dengan step-number */
+  width: 50%; /* Panjang garis, disesuaikan untuk masing-masing setengah */
+  height: 2px; /* Ketebalan garis */
+  background-color: #ddd;
+}
+
+.step::before {
+  left: 0;
+}
+
+.step::after {
+  right: 0;
+}
+
+.step:first-child::before {
+  display: none; /* Hapus garis kiri dari langkah pertama */
+}
+
+.step:last-child::after {
+  display: none; /* Hapus garis kanan dari langkah terakhir */
+}
+
+.step.done::before,
+.step.done::after {
+  background-color: #053b74; /* Warna untuk garis yang sudah selesai */
+}
+
+.step .step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1; /* Pastikan step-number di atas garis */
+}
+
+.step .step-title {
+  display: block;
+  font-size: 14px;
+}
+
+.step.done .step-number {
+  background-color: #053b74; /* Warna untuk langkah yang sudah selesai */
+  color: white;
+}

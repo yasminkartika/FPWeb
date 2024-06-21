@@ -1,0 +1,143 @@
+.navbar-nav .nav-link {
+  color: #000000 !important; /* Warna putih untuk teks navbar */
+}
+.hotel-booking {
+  padding: 20px;
+}
+
+.progress-tracker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 8rem;
+  position: relative;
+}
+
+.step {
+  flex: 1;
+  text-align: center;
+  position: relative;
+}
+
+.step::before,
+.step::after {
+  content: "";
+  position: absolute;
+  top: 15px; /* Sesuaikan nilai ini agar sejajar dengan step-number */
+  width: 50%; /* Panjang garis, disesuaikan untuk masing-masing setengah */
+  height: 2px; /* Ketebalan garis */
+  background-color: #ddd;
+}
+
+.step::before {
+  left: 0;
+}
+
+.step::after {
+  right: 0;
+}
+
+.step:first-child::before {
+  display: none; /* Hapus garis kiri dari langkah pertama */
+}
+
+.step:last-child::after {
+  display: none; /* Hapus garis kanan dari langkah terakhir */
+}
+
+.step.done::before,
+.step.done::after {
+  background-color: #053b74; /* Warna untuk garis yang sudah selesai */
+}
+
+.step .step-number {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1; /* Pastikan step-number di atas garis */
+}
+
+.step .step-title {
+  display: block;
+  font-size: 14px;
+}
+
+.step.done .step-number {
+  background-color: #053b74; /* Warna untuk langkah yang sudah selesai */
+  color: white;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #053b74;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.pilihan-kamar {
+  font-size: 14px;
+  color: #696969;
+}
+.room {
+  display: flex;
+  margin: 20px 0;
+  padding: 20px;
+}
+.room img {
+  width: 200px;
+  height: 200px;
+  background-color: #f2f2f2;
+  margin-right: 20px;
+}
+.room p {
+  flex: 1;
+}
+.colorgold {
+  color: #ae8d4a;
+}
+
+.waktu {
+  display: flex; /* Menggunakan flexbox untuk penataan */
+  justify-content: flex-end; /* Mengatur konten di sebelah kanan */
+  width: 100%; /* Lebar sesuai dengan parent container */
+  padding: 10px; /* Padding untuk ruang di sekitar konten */
+}
+
+.timer {
+  display: flex; /* Menggunakan flexbox untuk penataan */
+  justify-content: space-between; /* Menyusun kedua span secara terpisah */
+  width: 100%; /* Lebar sesuai dengan parent container */
+}
+
+.timer span {
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.info-cust {
+  padding: 20px;
+}
+
+.next-step {
+  padding: 20px;
+}
+
+.policy-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.policy-link:hover {
+  text-decoration: underline;
+}
