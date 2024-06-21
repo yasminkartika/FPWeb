@@ -1,3 +1,6 @@
+.navbar-nav .nav-link {
+  color: #000000 !important; /* Warna putih untuk teks navbar */
+}
 .hotel-booking {
   padding: 20px;
 }
@@ -80,7 +83,6 @@
   border: none;
   border-radius: 5px;
 }
-
 
 .pilihan-kamar {
   font-size: 14px;
