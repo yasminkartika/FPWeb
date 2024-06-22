@@ -94,11 +94,7 @@
                     </div>
                     <div class="step done">
                         <span class="step-number">2</span>
-                        <span class="step-title">Informasi Pembayaran</span>
-                    </div>
-                    <div class="step done">
-                        <span class="step-number">3</span>
-                        <span class="step-title">Konfirmasi Pemesanan</span>
+                        <span class="step-title">Konfirmasi Pembayaran</span>
                     </div>
                 </div>
                 <div class="pilihan-kamar shadow">
@@ -131,12 +127,16 @@
                         <input type="text" id="email" class="form-control" placeholder="Masukkan E-mail" required>
                     </div>
                 </div>
+                <div class="payment-information">
+                    <h2>Pembayaran</h2>
+
+                </div>
                 <div class="next-step shadow">
-                    <p>Dengan melanjutkan pemesanan ini, saya menyetujui pemesanan agoda
+                    <p>Dengan melanjutkan pemesanan ini, saya menyetujui pemesanan kamar
                         <a href="#" class="policy-link"> Syarat Penggunaan</a>
                         Dan
                         <a href="#" class="policy-link">Kebijakan Pribadi</a>.</p>
-                    <button type="button" class="btn btn-secondary" id="nextButton">Selanjutnya</button>
+                    <button type="submit" class="btn btn-secondary" id="nextButton">Pesan</button>
                 </div>
             </div>
         </div>
@@ -226,7 +226,7 @@
 
     <script>
         document.getElementById('nextButton').addEventListener('click', function () {
-            window.location.href = 'informasipembayaran.html';
+            window.location.href = 'konfirmasipemesanan.html';
         });
 
 
