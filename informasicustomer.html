@@ -98,22 +98,19 @@
                     </div>
                 </div>
                 <div class="pilihan-kamar shadow">
+                    <h5>Super Deluxe Room</h5>
                     <div class="room">
-                        <img src="images/superdeluxe.jpg" alt="Room 1" />
-                        <p>16 Jun 2024 - 24 Jun 2024</p>
-                        <p class="mx-2">King / Twins Bed</p>
-                        <p>From 116 reviews</p>
-                        <p href="rooms.html">⬆️ Ubah</p>
-                    </div>
-                </div>
-                <div class="waktu shadow">
-                    <div class="timer">
-                        <span>We are holding your price: <span id="timer">00:05:00</span></span>
-                        <button class="btn btn-secondary"> I need more time</button>
+                        <img src="/images/superdeluxe.jpg" alt="superdeluxe" />
+                        <div class="room-info">
+                            <p>16 Jun 2024 - 24 Jun 2024</p>
+                            <p>King / Twins Bed</p>
+                            <p>From 116 reviews</p>
+                            <a href="rooms.html">⬆️ Ubah Kamar</a>
+                        </div>
                     </div>
                 </div>
                 <div class="info-cust shadow mt-4">
-                    <h2 class="mt-2">Contact Details</h2>
+                    <h2 class="mt-2">Detail Kontak</h2>
                     <div class="form-group">
                         <label for="fisrtname">Nama Depan</label>
                         <input type="text" id="" class="form-control" placeholder="Nama Depan" required>
@@ -127,9 +124,26 @@
                         <input type="text" id="email" class="form-control" placeholder="Masukkan E-mail" required>
                     </div>
                 </div>
-                <div class="payment-information">
+                <div class="payment-information shadow">
                     <h2>Pembayaran</h2>
+                    <div class="payment-method">
+                        <label for="payment">Pilih Metode Pembayaran : </label>
+                        <select id="payment" name="payment">
+                            <option value="">Select</option>
+                            <option value="transfer">Transfer</option>
+                            <option value="cash">Cash</option>
+                        </select>
+                    </div>
 
+                    <div id="payment-details" class="payment-details hidden">
+                        <div id="transfer-info" class="hidden">
+                            <p>Nomor Rekening: 52233993</p>
+                            <p>Bank: BCA</p>
+                        </div>
+                        <div id="cash-info" class="hidden">
+                            <p>Silakan melakukan pembayaran di lobi.</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="next-step shadow">
                     <p>Dengan melanjutkan pemesanan ini, saya menyetujui pemesanan kamar
@@ -225,6 +239,31 @@
     <!-- Footer End-->
 
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const paymentSelect = document.getElementById("payment");
+            const paymentDetails = document.getElementById("payment-details");
+            const transferInfo = document.getElementById("transfer-info");
+            const cashInfo = document.getElementById("cash-info");
+
+            paymentSelect.addEventListener("change", function () {
+                const selectedValue = this.value;
+
+                paymentDetails.classList.add("hidden");
+                transferInfo.classList.add("hidden");
+                cashInfo.classList.add("hidden");
+
+                if (selectedValue === "transfer") {
+                    paymentDetails.classList.remove("hidden");
+                    transferInfo.classList.remove("hidden");
+                } else if (selectedValue === "cash") {
+                    paymentDetails.classList.remove("hidden");
+                    cashInfo.classList.remove("hidden");
+                }
+            });
+        });
+
+
+
         document.getElementById('nextButton').addEventListener('click', function () {
             window.location.href = 'konfirmasipemesanan.html';
         });
