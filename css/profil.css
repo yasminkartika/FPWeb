@@ -1,0 +1,58 @@
+body {
+    
+}
+.form-control{
+    background: #f0f8ff;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #4384B9;
+    background-color: #e6f7ff;
+}
+
+.profile-button {
+    background: #4384B9;
+    box-shadow: none;
+    border: none
+}
+
+.profile-button:hover {
+    background: #003A70
+}
+
+.profile-button:focus {
+    background: #28a745;
+    box-shadow: none
+}
+
+#edit:active {
+    background: #05eb09;
+    box-shadow: none
+}
+
+#cancel:active{
+    background:#ff0000;
+    box-shadow: none
+}
+#cancel:focus{
+    background:#ff0000;
+    box-shadow: none
+}
+
+
+.back:hover {
+    color: #682773;
+    cursor: pointer
+}
+
+.labels {
+    font-size: 11px
+}
+
+.add-experience:hover {
+    background: #BA68C8;
+    color: #fff;
+    cursor: pointer;
+    border: solid 1px #BA68C8
+}
