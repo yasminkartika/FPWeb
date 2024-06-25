@@ -100,30 +100,45 @@
 .order-details,
 .customer-information,
 .additional-information {
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .order-details h2,
 .customer-information h2,
 .additional-information h2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #333;
   margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  border: 1px solid #ddd;
-  text-align: left; /* Mengatur teks di dalam sel agar rata kiri */
+  margin: 0 auto;
 }
 
 th,
 td {
-  padding: 8px;
   border: 1px solid #ddd;
+  padding: 8px;
   text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+  width: 30%; /* Menentukan lebar kolom th */
+}
+
+td {
+  width: 70%; /* Menentukan lebar kolom td */
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #ddd;
 }
 
 .buttons {
