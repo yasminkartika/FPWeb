@@ -98,20 +98,25 @@
                         <p class="text-black-50" id="no-tlp">No Tlp :</p>
                         <p class="text-black-50" id="alamat">Alamat :</p>
                     </div>
+                    <div class="row align-center justify-content-center pt-5"><button class="btn mx-3 btn-primary profile-button" type="button" style="width: 10rem;" id="logout" >Logout</button></div>
                 </div>
                 <div class="col-md-7 ">
                     <div class="p-3 py-3">
                         <div class="d-flex justify-content-center align-items-center mb-3">
                             <h4 class="text-right" style="font-size: 2.6rem;">User Profile </h4>
                         </div>
-                        <div class="row mt-2">
+                        <div class="row ">
                             <div class="col-md-6"><label class="labels">Name</label><input type="text" class="form-control" placeholder="first name" value=""></div>
                             <div class="col-md-6"><label class="labels">Surname</label><input type="text" class="form-control" value="" placeholder="surname"></div>
                         </div>
                         <div class="row mt-3">
                             <div class="col-md-12"><label class="labels">Nomor Telepon</label><input type="text" class="form-control" placeholder="masukan phone number" value=""></div>
-                            <div class="col-md-12"><label class="labels">Alamat</label><input type="text" class="form-control" placeholder="masukan address line 2" value=""></div>
                             <div class="col-md-12"><label class="labels">Email ID</label><input type="text" class="form-control" placeholder="masukan email id" value=""></div>
+                            <div class="col-md-12"><label class="labels">Alamat</label><input type="text" class="form-control" placeholder="masukan address line 2" value=""></div>
+                        </div>
+                        <div class="row align-center justify-content-center">
+                            <div class="col-md-6"><label class="labels">Password Baru</label><input type="password" id="password" class="form-control" placeholder="password baru" required></div>
+                            <div class="col-md-6"><label class="labels">Konfirmasi Password Baru</label><input type="text" class="form-control" value="" placeholder="konfirmasi password baru"></div>
                         </div>
                         <div class="row align-center justify-content-center mt-4">
                             <button class="btn mx-3 btn-primary profile-button" type="button" style="width: 10rem;" id="edit" >Edit Profil</button>
@@ -206,6 +211,22 @@
 
     <!-- Modal -->
 
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+          const togglePassword = document.querySelector('#togglePassword');
+          const password = document.querySelector('#password');
+    
+          togglePassword.addEventListener('click', function (e) {
+            // Toggle the type attribute
+            const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+            password.setAttribute('type', type);
+            // Toggle the eye slash icon
+            this.classList.toggle('fa-eye-slash');
+            this.classList.toggle('fa-eye');
+    
+          });
+        });
+    </script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>

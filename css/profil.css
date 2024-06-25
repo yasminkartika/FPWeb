@@ -40,6 +40,19 @@ body {
     box-shadow: none
 }
 
+#logout{
+    background:#ff0000;
+    box-shadow: none
+}
+
+#logout:active{
+    background-color: #580101;
+}
+
+#logout:hover{
+    background:#d00101;
+    box-shadow: none
+}
 
 .back:hover {
     color: #682773;
