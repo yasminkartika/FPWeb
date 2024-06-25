@@ -116,6 +116,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   border: 1px solid #ddd;
+  text-align: left; /* Mengatur teks di dalam sel agar rata kiri */
 }
 
 th,
@@ -132,7 +133,7 @@ td {
 .btn-download {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: #053b74;
   color: #fff;
   text-decoration: none;
   border: none;
